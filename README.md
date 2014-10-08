@@ -1,7 +1,31 @@
-##Available Functions for Processing datatype Thermal
-**by Randall Bruder**
+###Various required fixes
 
-<br />
+Run this in terminal to find the COM port name:
+`ls /dev/tty.*`
+
+Older compatible version of `librxtxSerial.jnilib`:
+[http://blog.iharder.net/2009/08/18/rxtx-java-6-and-librxtxserial-jnilib-on-intel-mac-os-x/](http://blog.iharder.net/2009/08/18/rxtx-java-6-and-librxtxserial-jnilib-on-intel-mac-os-x/)
+
+Put the file here: `Processing.app/Contents/Java/modes/java/libraries/serial/library/macosx/`
+
+Fix for the **PortInUseException** error:
+[http://jgrasstechtips.blogspot.com/2008/04/rxtx-and-funky-portinuseexception-on.html](http://jgrasstechtips.blogspot.com/2008/04/rxtx-and-funky-portinuseexception-on.html)
+
+###Pin Connections:
+
+| [PRINTER] | [USB/TTY] |
+|-----------|-----------|
+| BLACK     | BLACK     |
+| YELLOW    | GREEN     |
+| GREEN     | WHITE     |
+
+###Thanks to:
+
+Adapted from ThermalPrinter [http://www.openprocessing.org/sketch/66707](http://www.openprocessing.org/sketch/66707)
+@author Bruno Blazinc
+
+###Available Functions for Processing datatype Thermal
+
 
 `test()`
 
