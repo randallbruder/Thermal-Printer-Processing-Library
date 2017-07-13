@@ -1,4 +1,4 @@
-###Various required fixes
+## Various required fixes
 
 Run this in terminal to find the COM port name:
 `ls /dev/tty.*`
@@ -11,7 +11,7 @@ Put the file here: `Processing.app/Contents/Java/modes/java/libraries/serial/lib
 Fix for the **PortInUseException** error:
 [http://jgrasstechtips.blogspot.com/2008/04/rxtx-and-funky-portinuseexception-on.html](http://jgrasstechtips.blogspot.com/2008/04/rxtx-and-funky-portinuseexception-on.html)
 
-###Pin Connections:
+## Pin Connections:
 
 | [PRINTER] | [USB/TTY] |
 |-----------|-----------|
@@ -19,127 +19,143 @@ Fix for the **PortInUseException** error:
 | YELLOW    | GREEN     |
 | GREEN     | WHITE     |
 
-###Thanks to:
+## Thanks to:
 
 Adapted from ThermalPrinter [http://www.openprocessing.org/sketch/66707](http://www.openprocessing.org/sketch/66707)
 @author Bruno Blazinc
 
-###Available Functions for Processing datatype Thermal
+## Available Functions for Processing datatype Thermal
 
 
-`test()`
+### `test()`
 
-`testBitmap()`
+### `testBitmap()`
 
-`printBarcode(String s, int type)`
->`@param s`
+### `printBarcode(String s, int type)`
 
->The barcode string to print
+`@param s`
 
->`@param type`
+The barcode string to print
 
->The type of barcode. (UPC-A = 0, UPC-E = 1, EAN13 = 2, EAN8 = 3, CODE39 = 4, , I25 = 5, CODEBAR = 6, CODE93 = 7, CODE128 = 8, CODE11 = 9, MSI = 10)
+`@param type`
+
+The type of barcode. (UPC-A = 0, UPC-E = 1, EAN13 = 2, EAN8 = 3, CODE39 = 4, , I25 = 5, CODEBAR = 6, CODE93 = 7, CODE128 = 8, CODE11 = 9, MSI = 10)
    
-`printBitmap(int width, int height, byte[] bmp)`
->Method to print bitmaps. Each pixel is a bit (0 = black pixel / 1 = white pixel) so every line of the image is comprised of bytes each containing the data for 8 pixels in a row.
+### `printBitmap(int width, int height, byte[] bmp)`
 
->`@param height`
+Method to print bitmaps. Each pixel is a bit (0 = black pixel / 1 = white pixel) so every line of the image is comprised of bytes each containing the data for 8 pixels in a row.
 
->Height of bitmap in pixels
+`@param height`
 
->`@param width`
+Height of bitmap in pixels
 
->Width of bitmap in pixels
+`@param width`
 
->`@param bmp`
+Width of bitmap in pixels
 
->Byte array cointaining the bitmap data. Each pixel is represeneted by a single bit in the byte array.
+`@param bmp`
+
+Byte array cointaining the bitmap data. Each pixel is represeneted by a single bit in the byte array.
 	
-`wake()`
+### `wake()`
 
-`sleep()`
+### `sleep()`
 
-`justify(String justification)`
->Set the text justification
+### `justify(String justification)`
 
->`@param justification`
+Set the text justification
 
->The justification of the text "L"(LEFT), "C"(CENTER) or "R"(RIGHT)
+`@param justification`
 
-`inverseOn()`
+The justification of the text "L"(LEFT), "C"(CENTER) or "R"(RIGHT)
 
-`inverseOff()`
+### `inverseOn()`
 
-`doubleHeightOn()`
+### `inverseOff()`
 
-`doubleHeightOff()`
+### `doubleHeightOn()`
 
-`setLineHeight(int lineHeight)`
->Set the line height of the text
+### `doubleHeightOff()`
 
->`@param lineHeight`
+### `setLineHeight(int lineHeight)`
+Set the line height of the text
 
->The new line height
+`@param lineHeight`
+
+The new line height
 	
-`boldOn()`
+### `boldOn()`
 
-`boldOff()`
+### `boldOff()`
 
-`underlineOn()`
+### `underlineOn()`
 
-`underlineOff()`
+### `underlineOff()`
 
-`setBarcodeHeight(int barcodeHeight)`
->Set the barcode height in pixels
+### `setBarcodeHeight(int barcodeHeight)`
 
->`@param barcodeHeight`
+Set the barcode height in pixels
 
->The new height of the barcode
+`@param barcodeHeight`
 
-`setSize(String s)`
->Set the text height
+The new height of the barcode
 
->`@param s`
+### `setSize(String s)`
 
->The size of the text "S"(SMALL), "M"(MEDIUM) or "L"(LARGE)
+Set the text height
 
-`feed()`
+`@param s`
 
-`feed(int num)`
->Feed the paper
+The size of the text "S"(SMALL), "M"(MEDIUM) or "L"(LARGE)
 
->`@param num`
->Tumber of lines to feed
+### `feed()`
+
+### `feed(int num)`
+
+Feed the paper
+
+`@param num`
+
+Tumber of lines to feed
 	
-`tab()`
+### `tab()`
 
-`setCharSpacing(int spacing)`
->Set the character spacing
+### `setCharSpacing(int spacing)`
 
->`@param spacing`
->The spacing between characters
+Set the character spacing
 
-`setLineSpacing(int height)`
->Set the line spacing in dots.
+`@param spacing`
 
->`@param height`
+The spacing between characters
+
+### `setLineSpacing(int height)`
+
+Set the line spacing in dots.
+
+`@param height`
 	
-`println(String str)`
->Print a text string
+### `println(String str)`
 
->`@param str`
->The string to print
+Print a text string
+
+`@param str`
+
+The string to print
 	
-`write(byte b)`
->Print a byte.
+### `write(byte b)`
 
->`@param b`
->The byte to print
+Print a byte.
 
-`write(byte[] b)`
->Print a byte array. The OutputStream is used instead of the PrintWriter because it supports byte arrays
+`@param b`
 
->`@param b`
->The byte array to print
+The byte to print
 
-`printImageWithEffect(File saveFile)`
+### `write(byte[] b)`
+
+Print a byte array. The OutputStream is used instead of the PrintWriter because it supports byte arrays
+
+`@param b`
+
+The byte array to print
+
+### `printImageWithEffect(File saveFile)`
