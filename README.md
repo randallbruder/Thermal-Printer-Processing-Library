@@ -21,8 +21,7 @@ Fix for the **PortInUseException** error:
 
 ## Thanks to:
 
-Adapted from ThermalPrinter [http://www.openprocessing.org/sketch/66707](http://www.openprocessing.org/sketch/66707)
-@author Bruno Blazinc
+Adapted from [ThermalPrinter](http://www.openprocessing.org/sketch/66707) by Bruno Blazinc
 
 ## Available Functions for Processing datatype Thermal
 
